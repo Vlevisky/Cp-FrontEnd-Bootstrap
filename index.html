@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Dave</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0c0c0c, #2a0a3a);
+            color: white;
+        }
+        .icon-container {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            border: 2px solid white;
+            color: white;
+            font-size: 1.5rem;
+            transition: 0.3s ease-in-out;
+            text-decoration: none;
+        }
+        .icon-container:hover {
+            transform: scale(1.1);
+            background-color: white;
+            color: black;
+        }
+        .contact-section {
+            background: #1a012a; /* Tom escuro roxo combinando com o fundo */
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+        }
+        .form-control {
+            background-color: #2a0a3a !important;
+            color: white !important;
+            border: 1px solid #6a0dad;
+        }
+        .form-control::placeholder {
+            color: #bbbbbb;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Header -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfólio</a>
+            <div>
+                <a href="#sobre" class="btn btn-outline-light">Sobre</a>
+                <a href="#contato" class="btn btn-outline-light">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center py-5" id="sobre">
+        <!-- Seção Inicial -->
+        <div class="card bg-dark text-light p-4 border border-secondary rounded-4 mt-5">
+            <img src="./1715718702587.jpg" class="rounded-circle mx-auto d-block" width="150">
+            <h1 class="mt-3">Davi Corrêa Paião</h1>
+            <p class="lead">Engenheiro de Software apaixonado por inovação, tecnologia e experiências imersivas.</p>
+            <div class="d-flex justify-content-center gap-3 mt-3">
+                <a href="https://github.com/Vlevisky" class="icon-container">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="30">
+                </a>
+                <a href="https://www.linkedin.com/in/davi-correa-paiao-902032193/" class="icon-container">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="30">
+                </a>
+                <a href="https://www.instagram.com/davipaiao.c/" class="icon-container">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="30">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Sobre Mim -->
+    <div class="container mt-5 bg-dark rounded-4 p-3">
+        <h2 class="text-center">Sobre Mim</h2>
+        <p class="text-center lead">Nasci no interior de São Paulo e comecei a estudar programação em 2021. Iniciei no desenvolvimento de jogos utilizando Lua, depois me aventurei pelo mundo do Java (Web e Desktop), C++, e outras linguagens. Sou apaixonado por tecnologia e sempre em busca de novos desafios.</p>
+    </div>
+    
+    <!-- Contato -->
+    <div class="container text-center mt-5 contact-section">
+        <h2>Contato</h2>
+        <form class="mt-3">
+            <input type="text" class="form-control mb-3" placeholder="Seu Nome">
+            <input type="email" class="form-control mb-3" placeholder="Seu Email">
+            <textarea class="form-control mb-3" rows="4" placeholder="Sua mensagem"></textarea>
+            <button type="submit" class="btn btn-outline-light">Enviar</button>
+        </form>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
